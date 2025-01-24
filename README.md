@@ -11,3 +11,10 @@ Atualizar requiriments
     pip freeze > requirements.txt
 
 Adicionar Git
+    git add .
+
+Commitar Git
+    git commit -m 'criação conexão BD'
+
+Push para github
+    git push origin main 
