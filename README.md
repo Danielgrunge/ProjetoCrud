@@ -18,3 +18,6 @@ Commitar Git
 
 Push para github
     git push origin main 
+
+Atualizar git
+    git pull
