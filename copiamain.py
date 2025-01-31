@@ -1,4 +1,4 @@
-from os import write
+﻿from os import write
 from numpy.core.fromnumeric import size
 import streamlit as st;
 import Controllers.ClienteController as Clientecontroller
@@ -17,16 +17,3 @@ if input_button_submit:
     cliente.nome = input_name
     cliente.idade = input_age
     cliente.profissao = input_occupation
-
-    
-
-    Clientecontroller.incluir(cliente)
-    
-    #st.write(f'Nome: {input_name}')
-    #st.write(f'Idade:  {input_age}')
-    #st.write(f'Profissão:  {input_occupation}')
-
-
-    # teste
-
-    
