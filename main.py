@@ -1,4 +1,8 @@
-import streamlit as st
+from os import write
+from numpy.core.fromnumeric import size
+import streamlit as st;
+import Controllers.ClienteController as Clientecontroller
+import models.Cliente as cliente
 
 st.title("Cadastro Crud")
 
@@ -10,8 +14,16 @@ with st.form(key="include_cliente"):
 
 
 if input_button_submit:
-    st.write(f'Nome: {input_name}')
-    st.write(f'Idade:  {input_age}')
-    st.write(f'Profissão:  {input_occupation}')
+    cliente.nome = input_name
+    cliente.idade = input_age
+    cliente.profissao = input_occupation
+
+    
+
+    Clientecontroller.incluir(cliente)
+    
+    #st.write(f'Nome: {input_name}')
+    #st.write(f'Idade:  {input_age}')
+    #st.write(f'Profissão:  {input_occupation}')
 
     
