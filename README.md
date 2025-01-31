@@ -21,3 +21,5 @@ Push para github
 
 Atualizar git
     git pull
+Se der erro de Branch
+    git branch --set-upstream-to=origin/main main  
